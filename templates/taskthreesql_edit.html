@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit User Data</title>
+</head>
+
+<body>
+    <h1>Edit User Data</h1>
+    <form method="POST">
+        <input type="hidden" name="id" value="{{ htmldata[0] }}">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" value="{{ htmldata[1] }}" required><br>
+        <label for="midname">Middle Name:</label>
+        <input type="text" name="midname" value="{{ htmldata[2] }}" required><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" value="{{ htmldata[3] }}" required><br>
+        <label for="tel">Contact:</label>
+        <input type="tel" name="tel" value="{{ htmldata[4] }}"><br>
+        <label for="usn">Student Number:</label>
+        <input type="text" name="usn" value="{{ htmldata[5] }}" required><br>
+        <input type="submit" value="Save">
+    </form>
+    <p><a href="{{ url_for('display') }}">Back to User Data</a></p>
+</body>
+
+</html>

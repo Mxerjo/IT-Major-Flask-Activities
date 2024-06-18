@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+</head>
+<body>
+    <div>
+        <h1>Login Page</h1>
+	
+        <form method="POST" action="{{url_for('handle_post')}}">
+	    <label for="usn">First Number : </label>  				
+            <input type="number" name="fnum" id="usn" placeholder="Username" required><br><br>
+
+	    <label for="usn">Second Number : </label>   
+            <input type="number" name="snum" id="pass" placeholder="Password" required><br><br>
+            <button type="submit">SUBMIT</button>
+            
+        </form>
+    </div>
+</body>
+</html>
